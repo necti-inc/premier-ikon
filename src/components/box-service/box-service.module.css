@@ -1,0 +1,10 @@
+.container {
+    background-color: rgba(0, 0, 0, 0.31);
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-variant: all-small-caps;
+}

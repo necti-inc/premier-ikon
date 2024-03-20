@@ -1,0 +1,187 @@
+.container {
+    padding: 100px 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.imageBackground {
+    position: absolute;
+    bottom: -10px;
+    left: -10px;
+    height: 350px;
+    width: auto;
+    z-index: -1;
+}
+
+.title {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-variant: all-small-caps;
+    line-height: 1;
+}
+
+.leftContainer {
+    width: 40%;
+    padding-left: 10px;
+}
+
+.subtitle {
+    margin-top: 5px;
+    text-transform: uppercase;
+    font-variant: all-small-caps;
+    line-height: 1;
+    width: 90%;
+    font-weight: 500;
+}
+
+.iconBox {
+    display: flex;
+}
+
+.icon {
+    height: 20px;
+    width: auto;
+    margin-right: 10px;
+    margin-top: 2px;
+}
+
+.subText {
+    font-size: 15px;
+}
+
+.keyTextContainer {
+    width: 80%;
+    border-radius: 12px;
+    padding: 20px 25px;
+    margin-top: 30px;
+}
+
+.divider {
+    border-top: 2px solid;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 60%;
+}
+
+.lowerDataContainer {
+    /*display: flex;*/
+}
+
+.callText {
+    margin-top: 5px;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-variant: all-small-caps;
+    line-height: 1;
+}
+
+.callText:hover {
+    font-weight: 500;
+}
+
+.rightContainerWeb {
+    width: 50%;
+}
+
+.rightContainerMobile {
+    width: 100%;
+    display: none;
+}
+
+.topContainer {
+    display: flex;
+    gap: 20px;
+}
+
+.bottomContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.warningText {
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 18px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-variant: all-small-caps;
+    line-height: 1;
+}
+
+.buttonDark {
+    padding: 6px 50px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 8px;
+    text-transform: uppercase;
+    font-variant: all-small-caps;
+    line-height: 1;
+}
+
+/* Add this CSS to your stylesheet */
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-top: 4px solid blue; /* Use your theme color */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@media only screen and (max-width: 1300px) {
+    .imageBackground {
+        display: none;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 50px 100px;
+    }
+
+    .keyTextContainer {
+        width: 100%;
+    }
+
+    .leftContainer {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .rightContainerWeb {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .rightContainerWeb {
+        display: none;
+    }
+
+    .rightContainerMobile {
+        display: revert;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .container {
+        padding: 30px 50px;
+    }
+
+    .title {
+        font-size: 48px;
+    }
+
+    .subtitle {
+        font-size: 15px;
+    }
+}

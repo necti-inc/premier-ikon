@@ -1,0 +1,41 @@
+.container {
+    padding: 80px 90px;
+}
+
+.header {
+    text-align: left;
+    text-transform: uppercase;
+    font-variant: all-small-caps;
+    line-height: 1;
+    width: 70%;
+}
+
+@media (max-width: 750px) {
+    .header {
+        font-size: 38px !important;
+        text-align: center;
+        width: 100%;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 580px) {
+    .header {
+        font-size: 30px !important;
+    }
+}
+
+@media (max-width: 475px) {
+    .header {
+        font-size: 28px !important;
+    }
+
+    .container {
+        padding: 40px 30px;
+    }
+}

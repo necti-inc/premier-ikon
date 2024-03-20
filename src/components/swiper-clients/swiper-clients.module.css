@@ -1,0 +1,16 @@
+.swiperContainer {
+    width: 1500px;
+    height: 500px;
+}
+
+@media (max-width: 1430px) {
+    .swiperContainer {
+        width: 1250px;
+    }
+}
+
+@media (max-width: 1080px) {
+    .swiperContainer {
+        width: 1200px;
+    }
+}

@@ -1,0 +1,25 @@
+.scrollContainer::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari */
+}
+
+.leftButton {
+    padding: 10px 15px;
+    border-radius: 100%;
+}
+
+.rightButton {
+    padding: 10px 15px;
+    border-radius: 100%;
+}
+
+.iconContainer {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    right: 40px;
+    bottom: 200px;
+}
+
+.icon {
+    height: 18px;
+}

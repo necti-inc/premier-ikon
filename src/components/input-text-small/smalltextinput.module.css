@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 10px 10px 2px;
+}
+
+.label {
+    font-weight: 500;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-variant: all-small-caps;
+    line-height: 1;
+    font-size: 19px;
+}
+
+.input {
+    border: 2px solid ;
+    border-radius: 5px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-variant: all-small-caps;
+    line-height: 1;
+    padding: 6px 10px 10px;
+}

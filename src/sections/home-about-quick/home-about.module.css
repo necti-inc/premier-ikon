@@ -1,0 +1,33 @@
+.container {
+    padding: 100px 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    text-align: center;
+    text-transform: uppercase;
+    font-variant: all-small-caps;
+}
+
+@media (max-width: 750px) {
+    .header {
+        font-size: 38px !important;
+    }
+}
+
+@media (max-width: 580px) {
+    .header {
+        font-size: 30px !important;
+    }
+}
+
+@media (max-width: 475px) {
+    .header {
+        font-size: 28px !important;
+    }
+
+    .container {
+        padding: 70px 50px;
+    }
+}

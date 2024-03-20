@@ -1,0 +1,165 @@
+.footerContainer {
+    padding-top: 70px;
+    padding-bottom: 40px;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.iconButtonContainer {
+    display: flex;
+    gap: 12px;
+}
+
+.rightContainer {
+    margin-right: 8%;
+}
+
+.bodyContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.title {
+    height: 80px;
+    width: auto;
+}
+
+.textContainer {
+    border-top: 2px solid;
+    width: 100%;
+    padding-top: 5px;
+}
+
+.subTitle {
+    font-size: 28px;
+    text-transform: uppercase;
+    font-variant: all-small-caps;
+    line-height: 1;
+}
+
+.description {
+    font-size: 22px;
+    text-transform: uppercase;
+    font-variant: all-small-caps;
+    line-height: 1;
+}
+
+.description:hover {
+    font-weight: 600;
+}
+
+.textButton:hover {
+    font-weight: 600;
+}
+
+.titleContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contentContainer {
+    display: flex;
+    gap: 50px;
+    margin-right: 5%;
+}
+
+.divider {
+    width: 100%;
+    border-top: 1px solid;
+    padding-bottom: 35px;
+}
+
+.lowerContainer {
+    padding-bottom: 35px;
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: space-between;*/
+}
+
+.copyRightText {
+    font-size: 22px;
+    text-transform: uppercase;
+    font-variant: all-small-caps;
+    line-height: 1;
+}
+
+.footerIcon {
+    width: auto;
+    height: 20px;
+}
+
+.iconBox {
+    display: flex;
+    gap: 15px;
+
+}
+
+.iconContainer {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.iconContainer:hover {
+    cursor: pointer;
+}
+
+.dividerMobile {
+    display: none;
+    width: 100%;
+    border-top: 1px solid;
+    padding-bottom: 35px;
+}
+
+@media only screen and (max-width: 1070px) {
+    .footerContainer {
+        flex-direction: column;
+    }
+
+    .rightContainer {
+        margin-bottom: 50px;
+    }
+
+    .footerContainer .rightContainer {
+        order: -1;
+    }
+
+    .contentContainer {
+        flex-direction: column;
+        width: inherit;
+        gap: 20px;
+    }
+
+    .bodyContainer {
+        width: 100vw;
+        padding: 0 100px;
+    }
+
+    .lowerContainer {
+        width: 100vw;
+        padding: 30px 100px 0;
+    }
+
+    .textContainer {
+        width: inherit !important;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .bodyContainer {
+        padding: 0 50px;
+    }
+
+    .lowerContainer {
+        padding: 30px 50px 0;
+    }
+}

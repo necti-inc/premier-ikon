@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.title {
+    text-transform: uppercase;
+    font-variant: all-small-caps;
+}
+
+.buttonIcon {
+}

@@ -1,0 +1,42 @@
+.container {
+    padding: 100px 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 1250px) {
+    .container {
+        padding: 80px 150px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .container {
+        padding: 80px 100px;
+    }
+}
+
+@media (max-width: 785px) {
+    .container {
+        padding: 60px 50px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 60px 20px;
+    }
+}
+
+@media (max-width: 475px) {
+    .container {
+        padding: 40px 10px;
+        gap: 10px;
+    }
+}

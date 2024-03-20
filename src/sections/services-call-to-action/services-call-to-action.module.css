@@ -1,0 +1,53 @@
+.container {
+    padding: 80px 90px;
+    position: relative;
+}
+
+.header {
+    text-align: left;
+    text-transform: uppercase;
+    font-variant: all-small-caps;
+    line-height: 1;
+    width: 70%;
+}
+
+.imageBackground {
+    position: absolute;
+    bottom: 0;
+    left: -1px;
+    height: 200px;
+    width: 100%;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 1111px) {
+    .header {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .header {
+        font-size: 38px !important;
+    }
+
+    .container {
+        padding: 50px 50px;
+    }
+
+    .imageBackground {
+        height: 100px;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .header {
+        font-size: 30px !important;
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    .header {
+        font-size: 28px !important;
+    }
+}

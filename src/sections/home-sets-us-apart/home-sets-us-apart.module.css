@@ -1,0 +1,136 @@
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    padding: 120px 0;
+}
+
+.header {
+    text-align: center;
+    text-transform: uppercase;
+    font-variant: all-small-caps;
+    line-height: 1;
+    width: 40%;
+    margin-bottom: 40px;
+    z-index: 1;
+}
+
+.servicesContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    padding: 30px 0;
+}
+
+.serviceContainer {
+    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.serviceContainer > div {
+    /*flex: 1 1 calc(33.333% - 20px);*/
+    /*max-width: calc(33.333% - 20px);*/
+
+}
+
+.buttonContainer {
+    margin-top: 60px;
+    z-index: 1;
+}
+
+
+.imageBackground {
+    position: absolute;
+    top: -0.5px;
+    left: -10px;
+    height: 700px;
+    width: auto;
+    z-index: 0;
+}
+
+.imageBackgroundBottom {
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    height: 250px;
+    width: auto;
+}
+
+@media (max-width: 1280px) {
+    .header {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1265px) {
+    .serviceContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 850px) {
+    .serviceContainer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .partnersContainer {
+        padding: 30px 0;
+    }
+
+    .container {
+        padding: 100px 20px;
+    }
+
+    .header {
+        margin-bottom: 0;
+    }
+
+    .imageBackground {
+        height: 600px;
+    }
+
+    .imageBackgroundBottom {
+        height: 200px;
+    }
+}
+
+@media (max-width: 750px) {
+    .header {
+        font-size: 55px !important;
+    }
+}
+
+@media (max-width: 580px) {
+    .header {
+        font-size: 50px !important;
+    }
+
+    .container {
+        padding: 90px 20px;
+    }
+
+    .imageBackground {
+        height: 400px;
+    }
+
+    .imageBackgroundBottom {
+        height: 130px;
+    }
+}
+
+@media (max-width: 475px) {
+    .header {
+        font-size: 43px !important;
+        width: 100%;
+    }
+
+    .buttonContainer {
+        margin-top: 20px;
+    }
+}

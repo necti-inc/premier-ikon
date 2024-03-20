@@ -1,0 +1,65 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 97%;
+    margin: 10px 10px 2px;
+
+}
+
+.label {
+    font-weight: 400;
+    margin-bottom: 5px;
+    font-family: inherit;
+    text-transform: uppercase;
+    font-variant: all-small-caps;
+    line-height: 1;
+    font-size: 19px;
+}
+
+.dropdown {
+    padding: 6px 10px 10px;
+    border: 2px solid;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-variant: all-small-caps;
+    line-height: 1;
+}
+
+.icon {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.menu {
+    border: 1.5px solid;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 5px;
+    list-style-type: none;
+    padding: 0;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-variant: all-small-caps;
+    line-height: 1;
+}
+
+.menu li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.menu li:hover {
+    background-color: #eee;
+}
+
+@media only screen and (max-width: 1300px) {
+    .container {
+        width: 98%;
+    }
+}

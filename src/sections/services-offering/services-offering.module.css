@@ -1,0 +1,41 @@
+.container {
+    padding: 80px 100px;
+    position: relative;
+}
+
+
+
+.header {
+    text-align: left;
+    text-transform: uppercase;
+    font-variant: all-small-caps;
+    line-height: 1;
+    margin-bottom: 35px;
+}
+
+.lowerLine {
+    border-top: 2px solid;
+}
+
+@media only screen and (max-width: 750px) {
+    .header {
+        font-size: 55px !important;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .header {
+        font-size: 50px !important;
+    }
+
+    .container {
+        padding: 60px 50px;
+
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    .header {
+        font-size: 43px !important;
+    }
+}
