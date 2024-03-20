@@ -10,7 +10,7 @@ function HomeHeader() {
       style={{ position: "relative", overflow: "hidden" }}
     >
       <video
-        src="/HP-background-video.mp4" // Update the src attribute
+        src="https://storage.cloud.google.com/premier_home_video/HP-background-video.mp4"
         autoPlay
         muted
         loop
