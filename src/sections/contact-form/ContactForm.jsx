@@ -2,17 +2,13 @@
 
 import React, { useState, useRef } from "react";
 import axios from "axios";
-import { collection, addDoc } from "firebase/firestore";
-import { db } from "@/utils/firebase";
 import styles from "./contact-form.module.css";
 import theme from "@/app/theme";
-import Divider from "@/sections/contact-form/Divider";
 import SmallTextInput from "@/components/input-text-small/SmallTextInput";
 import LargeTextInput from "@/components/input-text-large/LargeTextInput";
 import PlanDropdown from "@/components/input-dropdown/PlanDropdown";
 import BLB from "../../../public/CUP-header-bubble.png";
 import Image from "next/image";
-// import FormSubmission from "@/sections/contact-form-submission/FormSubmission";
 
 function ContactForm() {
   const [firstNameValue, setFirstnameValue] = useState(["", true]);
@@ -23,11 +19,7 @@ function ContactForm() {
   const [anythingElseValue, setAnythingElseValue] = useState(["", true]);
   const [hearAbout, setHearAbout] = useState("Select and option");
 
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSubmitted, setIsSubmitted] = useState(false);
-  const [successState, setSuccessState] = useState(true);
   const [isHovered, setIsHovered] = useState(false);
-  const timeoutRef = useRef(null);
 
   const hearAboutValues = [
     ["Customer Referral", ""],
@@ -46,11 +38,6 @@ function ContactForm() {
     // Simple regex for email validation
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return regex.test(email);
-  };
-
-  const clearSubmissionState = () => {
-    setIsSubmitted(false);
-    setSuccessState(false);
   };
 
   const handleSubmit = async (event) => {
@@ -112,7 +99,6 @@ function ContactForm() {
         setHearAbout("reset");
         setAnythingElseValue(["reset", true]);
 
-        clearSubmissionState();
       } catch (error) {
         console.error("Error calling Cloud Function:", error);
       }
