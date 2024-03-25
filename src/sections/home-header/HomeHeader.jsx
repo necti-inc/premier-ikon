@@ -50,7 +50,7 @@ function HomeHeader() {
         <ButtonGeneral
           title={"BECOME A PARTNER"}
           boxColor={theme.white}
-          buttonPath={"/"}
+          buttonPath={"/contact"}
           style={{ position: "relative", zIndex: 2 }}
         />
       </div>

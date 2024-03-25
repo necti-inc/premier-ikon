@@ -185,3 +185,47 @@
         font-size: 15px;
     }
 }
+
+@media only screen and (max-width: 450px) {
+    .title {
+        margin-top: 50px;
+        font-variant: revert;
+        font-size: 30px !important;
+    }
+
+    .subtitle {
+        margin-top: 10px;
+        font-variant: revert;
+        font-size: 16px !important;
+    }
+
+    .divider {
+        width: 100%;
+    }
+
+    .callText {
+        margin-top: 5px;
+        font-size: 16px !important;
+        font-variant: revert;
+    }
+
+    .warningText {
+        font-size: 16px;
+        font-variant: revert;
+    }
+
+    .buttonDark {
+        padding: 10px 30px;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        font-weight: 600;
+        font-family: inherit;
+        cursor: pointer;
+        margin-left: 10px;
+        margin-top: 8px;
+        text-transform: uppercase;
+        font-variant: revert;
+        line-height: 1;
+    }
+}

@@ -64,5 +64,16 @@
     .header {
         font-size: 43px !important;
     }
+}
 
+@media only screen and (max-width: 450px) {
+    .header {
+        font-variant: revert;
+        font-size: 28px !important;
+    }
+
+    .description {
+        font-variant: revert;
+        font-size: 18px !important;
+    }
 }

@@ -31,3 +31,10 @@
         padding: 70px 50px;
     }
 }
+
+@media (max-width: 450px) {
+    .header {
+        font-size: 25px !important;
+        font-variant: revert;
+    }
+}

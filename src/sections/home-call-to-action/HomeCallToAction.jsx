@@ -20,7 +20,7 @@ function HomeCallToAction() {
         title={"kickoff your business"}
         titleColor={theme.lightTan}
         boxColor={theme.primaryColor}
-        buttonPath={"/"}
+        buttonPath={"/contact"}
       />
     </div>
   );

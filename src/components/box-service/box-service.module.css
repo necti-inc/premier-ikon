@@ -8,3 +8,10 @@
     text-transform: uppercase;
     font-variant: all-small-caps;
 }
+
+@media (max-width: 450px) {
+    .container {
+        font-variant: revert;
+        font-size: 24px !important;
+    }
+}

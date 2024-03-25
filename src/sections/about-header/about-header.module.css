@@ -77,3 +77,19 @@
         height: 500px !important;
     }
 }
+
+@media (max-width: 450px) {
+    .header {
+        font-variant: revert;
+        font-size: 28px !important;
+    }
+
+    .description {
+        font-variant: revert;
+        font-size: 18px !important;
+    }
+
+    .container {
+        padding-bottom: 500px !important;
+    }
+}

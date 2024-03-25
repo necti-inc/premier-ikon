@@ -16,3 +16,12 @@
         padding: 15px 20px;
     }
 }
+
+/*Style for Iphone*/
+@media (max-width: 450px) {
+    .header {
+        font-variant: revert;
+        font-size: 18px !important;
+        margin-top: 0;
+    }
+}

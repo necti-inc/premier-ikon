@@ -9,5 +9,10 @@
     font-variant: all-small-caps;
 }
 
-.buttonIcon {
+@media (max-width: 450px) {
+    .title {
+        text-transform: uppercase;
+        font-variant: revert;
+        font-size: 15px !important;
+    }
 }

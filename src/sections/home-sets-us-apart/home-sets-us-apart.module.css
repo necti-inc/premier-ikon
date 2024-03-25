@@ -134,3 +134,15 @@
         margin-top: 20px;
     }
 }
+
+@media (max-width: 450px) {
+    .header {
+        font-variant: revert;
+        font-size: 28px !important;
+        width: 100%;
+    }
+
+    .buttonContainer {
+        margin-top: 20px;
+    }
+}

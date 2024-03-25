@@ -28,10 +28,10 @@ function ServicesCallToAction() {
         collaborative and creative process that sets you up for success.
       </h2>
       <ButtonGeneral
-        title={"kickoff your business"}
-        titleColor={theme.black}
-        boxColor={theme.primaryColor}
-        buttonPath={"/contact"}
+          title={"KICKOFF YOUR BUSINESS"}
+          boxColor={theme.primaryColor}
+          buttonPath={"/contact"}
+          style={{ position: "relative", zIndex: 2 }}
       />
     </div>
   );

@@ -55,3 +55,10 @@
         font-size: 43px !important;
     }
 }
+
+@media (max-width: 450px) {
+    .header {
+        font-variant: revert;
+        font-size: 28px !important;
+    }
+}

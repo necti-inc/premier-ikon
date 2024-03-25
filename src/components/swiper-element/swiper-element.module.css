@@ -23,3 +23,9 @@
 .icon {
     height: 18px;
 }
+
+@media (max-width: 450px) {
+    .scrollContainer {
+        padding-left: 15px !important;
+    }
+}

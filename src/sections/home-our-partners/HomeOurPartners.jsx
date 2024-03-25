@@ -46,7 +46,7 @@ function HomeOurPartners() {
 
       <ButtonText
         buttonTitle={"Explore our Partners"}
-        buttonPath={"/services"}
+        buttonPath={"/partners"}
       />
     </div>
   );
