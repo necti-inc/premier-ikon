@@ -21,7 +21,7 @@ function ContactForm() {
   const [instagramHandleValue, setInstagramHandleValue] = useState(["", true]);
   const [youtubeHandleValue, setYoutubeHandleValue] = useState(["", true]);
   const [anythingElseValue, setAnythingElseValue] = useState(["", true]);
-  const [planValue, setPlanValue] = useState("Select and option");
+  const [hearAbout, setHearAbout] = useState("Select and option");
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -29,7 +29,7 @@ function ContactForm() {
   const [isHovered, setIsHovered] = useState(false);
   const timeoutRef = useRef(null);
 
-  const planValues = [
+  const hearAboutValues = [
     ["Customer Referral", ""],
     ["Instagram", ""],
     ["LinkedIn", ""],
@@ -88,51 +88,33 @@ function ContactForm() {
 
     // If everything is valid, continue with submission
     if (isValid) {
-      setIsSubmitting(true);
-      setIsSubmitting(false);
-      setIsSubmitted(true);
+      const formData = {
+        firstName: firstNameValue[0],
+        lastName: lastNameValue[0],
+        email: emailValue[0],
+        instagramHandle: instagramHandleValue[0],
+        youtubeHandle: youtubeHandleValue[0],
+        hearAbout: hearAbout,
+        anythingElse: anythingElseValue[0],
+      };
+
       try {
-        await addDoc(collection(db, "online-inquiries"), {
-          firstName: firstNameValue[0],
-          lastName: lastNameValue[0],
-          email: emailValue[0],
-          instagramHandle: instagramHandleValue[0],
-          youtubeHandle: youtubeHandleValue[0],
-          plan: planValue,
-          anythingElse: anythingElseValue[0],
-        });
+        await axios.post(
+          "https://us-central1-premier-ikon.cloudfunctions.net/contact-form-automation",
+          formData
+        );
+
         setFirstnameValue(["reset", true]);
         setLastNameValue(["reset", true]);
         setEmailValue(["reset", true]);
         setInstagramHandleValue(["reset", true]);
         setYoutubeHandleValue(["reset", true]);
-        setPlanValue("reset");
+        setHearAbout("reset");
         setAnythingElseValue(["reset", true]);
 
-        setSuccessState(true);
-
-        const formData = {
-          firstName: firstNameValue[0],
-          lastName: lastNameValue[0],
-          email: emailValue[0],
-          phoneNumber: instagramHandleValue[0],
-          companyName: youtubeHandleValue[0],
-          solutionPackage: planValue,
-          anythingElse: anythingElseValue[0],
-        };
-
-        try {
-          await axios.post(
-            "https://us-central1-contact-form-404005.cloudfunctions.net/contact-form-automation",
-            formData
-          );
-        } catch (error) {
-          console.error("Error calling Cloud Function:", error);
-        }
         clearSubmissionState();
-      } catch (e) {
-        setSuccessState(false);
-        console.log(e);
+      } catch (error) {
+        console.error("Error calling Cloud Function:", error);
       }
     }
   };
@@ -239,17 +221,11 @@ function ContactForm() {
               isValid={youtubeHandleValue[1]}
             />
             <PlanDropdown
-              value={planValue}
+              value={hearAbout}
               title={"How did you find out about us?"}
-              onChange={(plan) => setPlanValue(plan)}
-              items={planValues}
+              onChange={(plan) => setHearAbout(plan)}
+              items={hearAboutValues}
             />
-            {/*<PlanDropdown*/}
-            {/*  value={carteValue}*/}
-            {/*  title={"A La Carte Solution"}*/}
-            {/*  onChange={(plan) => setCarteValue(plan)}*/}
-            {/*  items={carteValues}*/}
-            {/*/>*/}
             <LargeTextInput
               title={"Anything else?"}
               placeholder={"Looking forward to kickoff my new brand!"}
@@ -263,7 +239,6 @@ function ContactForm() {
               Fields marked with asterisk ( * ) are required.
             </p>
             <button
-              // styles={{ backgroundColor: theme.black, color: theme.white }}
               style={buttonstyles}
               className={styles.buttonDark}
               onMouseEnter={() => setIsHovered(true)}
@@ -317,10 +292,10 @@ function ContactForm() {
               isValid={youtubeHandleValue[1]}
             />
             <PlanDropdown
-              value={planValue}
+              value={hearAbout}
               title={"Solution Package"}
-              onChange={(plan) => setPlanValue(plan)}
-              items={planValues}
+              onChange={(plan) => setHearAbout(plan)}
+              items={hearAboutValues}
             />
             {/*<PlanDropdown*/}
             {/*  value={carteValue}*/}

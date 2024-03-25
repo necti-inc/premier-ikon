@@ -54,6 +54,7 @@ function PartnersHeader() {
               </p>
             }
             image={"/PP-legends.png"}
+            reference={"https://www.legends.media/"}
           />
           <BoxService
             title={
@@ -62,6 +63,7 @@ function PartnersHeader() {
               </p>
             }
             image={"/PP-kkfit.png"}
+            reference={"https://shop.kkfit.com/"}
           />
           <BoxService
             title={
@@ -70,6 +72,7 @@ function PartnersHeader() {
               </p>
             }
             image={"/PP-hartford.png"}
+            reference={"https://www.hartfordltd.com/"}
           />
           <BoxService
             title={
@@ -78,6 +81,7 @@ function PartnersHeader() {
               </p>
             }
             image={"/PP-heart-of-david.png"}
+            reference={"https://theheartofdavid.co/"}
           />
           <BoxService
             title={
@@ -86,6 +90,7 @@ function PartnersHeader() {
               </p>
             }
             image={"/PP-lzmfg.png"}
+            reference={"https://lzmfg.com/"}
           />
           <BoxService
             title={
@@ -102,6 +107,7 @@ function PartnersHeader() {
               </p>
             }
             image={"/PP-atomic-golf.png"}
+            reference={"https://atomicgolf.com/"}
           />
           <BoxService
             title={
@@ -110,6 +116,7 @@ function PartnersHeader() {
               </p>
             }
             image={"/PP-impact-pest-pros.png"}
+            reference={"https://www.impactpestpros.com/"}
           />
           <BoxService
             title={
@@ -118,6 +125,7 @@ function PartnersHeader() {
               </p>
             }
             image={"/PP-atla.png"}
+            reference={"https://autotopiala.com/"}
           />
           <BoxService
             title={
@@ -126,15 +134,16 @@ function PartnersHeader() {
               </p>
             }
             image={"/PP-parkway.png"}
+            reference={"https://www.parkwayusa.com/"}
           />
-          <BoxService
-            title={
-              <p>
-                <b>WD Detailing</b>
-              </p>
-            }
-            image={"/PP-kkfit.png"}
-          />
+          {/*<BoxService*/}
+          {/*  title={*/}
+          {/*    <p>*/}
+          {/*      <b>WD Detailing</b>*/}
+          {/*    </p>*/}
+          {/*  }*/}
+          {/*  image={"/PP-kkfit.png"}*/}
+          {/*/>*/}
           <BoxService
             title={
               <p>

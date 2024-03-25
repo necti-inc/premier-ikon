@@ -11,11 +11,11 @@ import BoxService from "@/components/box-service/BoxService";
 
 function HomeOurPartners() {
   const items = [
-    ["Legends Media", "/PP-legends.png"],
-    ["kkfit", "/PP-kkfit.png"],
-    ["hartford ltd.", "/PP-hartford.png"],
-    ["The Heart of David", "/PP-heart-of-david.png"],
-    ["LZMFG", "/PP-lzmfg.png"],
+    ["Legends Media", "/PP-legends.png", "https://legends.media/"],
+    ["kkfit", "/PP-kkfit.png", "https://shop.kkfit.com/"],
+    ["hartford ltd.", "/PP-hartford.png", "https://www.hartfordltd.com/"],
+    ["The Heart of David", "/PP-heart-of-david.png", "https://theheartofdavid.co/"],
+    ["LZMFG", "/PP-lzmfg.png", "https://lzmfg.com/"],
     ["Lonnie Walker", "/PP-lonnie-walker.png"],
   ].map((item, index) => (
     <BoxService
@@ -25,6 +25,7 @@ function HomeOurPartners() {
         </p>
       }
       image={item[1]}
+      reference={item[2]}
     />
   ));
 
