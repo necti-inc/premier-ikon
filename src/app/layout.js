@@ -5,7 +5,7 @@ import Footer from "@/components/navigation-footer/Footer";
 export const metadata = {
   title: "Premier Ikon",
   description:
-    "Elevating Brands to Iconic Status. Specializing in Global Merchandising, Innovative Product Development, and Dynamic Branding Strategies, we empower brands to captivate and connect with audiences worldwide. Our passion lies in transforming inspiration into reality, championing creativity, and forging genuine, authentic connections.",
+    "Elevating Brands to Ikonic Status. Specializing in Global Merchandising, Innovative Product Development, and Dynamic Branding Strategies, we empower brands to captivate and connect with audiences worldwide. Our passion lies in transforming inspiration into reality, championing creativity, and forging genuine, authentic connections.",
 };
 
 export default function RootLayout({ children }) {
