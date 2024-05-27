@@ -15,7 +15,7 @@ const theme = {
   fontSizeS: 32, //750px -> 30px, 580px -> 28px,
   fontSizeXS: 22, //580px -> 20px, 475px -> 18px
   fontSizeBox: 30,
-  fontSizeDescription: 26, //750px -> 20px, 580px -> 18px
+  fontSizeDescription: 22, //750px -> 20px, 580px -> 18px
   fontSizeButton: 23,
   fontSizeButtonText: 24,
   fontSizeButtonIcon: 20,

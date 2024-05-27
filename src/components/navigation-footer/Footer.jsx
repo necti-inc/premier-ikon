@@ -116,7 +116,7 @@ const Footer = () => {
             </a>
           </p>
           <p style={{ color: theme.lightTan }} className={style.copyRightText}>
-            ©Premier Ikon LLC. All Rights Reserved
+            ©Premier Ikon Inc. All Rights Reserved
           </p>
         </div>
       </div>

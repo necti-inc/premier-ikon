@@ -8,10 +8,8 @@
 
 .description {
     text-align: left;
-    text-transform: uppercase;
-    font-variant: all-small-caps;
     font-weight: 500;
-    line-height: 1;
+    line-height: 1.25;
     margin-bottom: 40px;
     width: 80%;
 }

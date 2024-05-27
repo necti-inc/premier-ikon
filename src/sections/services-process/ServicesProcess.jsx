@@ -24,10 +24,10 @@ function ServicesProcess() {
             className={styles.lowerDescription}
             style={{ color: theme.lightTan, fontSize: theme.fontSizeXS }}
           >
-            communication is the cornerstone of our process. From our initial
+            Communication is the cornerstone of our process. From our initial
             discussion to the final approval, we emphasize clarity and
             transparency. Managing expectations and maintaining alignment at
-            every stage is crucial. to ensure peace of mind, fostering a
+            every stage is crucial. To ensure peace of mind, fostering a
             foundation of trust, collaboration, and an exceptional working
             experience for our clients.
           </p>
