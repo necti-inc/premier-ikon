@@ -23,9 +23,7 @@
 
 .description {
     font-weight: 500;
-    text-transform: uppercase;
-    font-variant: all-small-caps;
-    line-height: 1;
+    line-height: 1.35;
     margin-top: 20px;
     padding-bottom: 30px;
 }
