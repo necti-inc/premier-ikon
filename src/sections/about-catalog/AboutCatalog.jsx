@@ -11,7 +11,7 @@ function AboutCatalog() {
     <div className={styles.container}>
       <Image className={styles.banner} src={FI} alt={"First Image"} />
       <Image className={styles.banner} src={SI} alt={"Second Image"} />
-      <Image className={styles.banner} src={TI} alt={"Third Image"} />
+      {/*<Image className={styles.banner} src={TI} alt={"Third Image"} />*/}
     </div>
   );
 }
